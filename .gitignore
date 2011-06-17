@@ -4,3 +4,5 @@
 *.iws
 *.kilepr
 target
+*.tex~
+*.backup
