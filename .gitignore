@@ -6,3 +6,10 @@
 target
 *.tex~
 *.backup
+*.aux
+*.log
+*.nav
+*.out
+*.pdf
+*.toc
+*.snm
