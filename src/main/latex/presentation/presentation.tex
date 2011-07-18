@@ -40,11 +40,11 @@
     \frametitle{Android Proper - As Found on Your Device}
     \begin{itemize}
       \item<1->Linux
-      \item<2-> Apache Harmony 
+      \item<2->Apache Harmony 
       \item<3->Lots of other open source components
       \item<4->AOSP bits
       \item<5->binary device driver and other blobs 
-      \item<6-> custom parts from manufacturer and provider
+      \item<6->custom parts from manufacturer and provider
     \end{itemize}
     \end{frame}
   
@@ -54,7 +54,7 @@
       \begin{itemize}
         \item<1->open source drops
         \item<2->base for custom roms and such
-        \item<3-> numerous specific components e.g. Dalvik
+        \item<3->numerous specific components e.g. Dalvik
         \item<4->various forks from upstream projects
       \end{itemize}
     \end{frame}
@@ -100,15 +100,25 @@
   \subsection{Build Tools}
 
     \begin{frame}
-      \frametitle{Ant}
+      \frametitle{Maven Android Plugin and Friends}
+      \begin{itemize}
+       \item Maven Android Plugin \url{http://code.google.com/p/maven-android-plugin/}
+       \item Maven Android SDK Deployer \url{https://github.com/mosabua/maven-android-sdk-deployer}
+       \item Android4Maven \url{http://sourceforge.net/projects/android4maven/}
+       \item M2E Android \url{https://github.com/rgladwell/m2e-android}
+       \item AndroidSDKFido \url{https://github.com/joakime/android-sdkfido}
+       \item Android RIndirect \url{https://github.com/akquinet/android-rindirect}
+      \end{itemize}
+
     \end{frame}
 
     \begin{frame}
-      \frametitle{Maven Android Plugin}
-    \end{frame}
+      \frametitle{Others}
+      \begin{itemize}
+       \item Gradle Android Plugin \url{https://github.com/jvoegele/gradle-android-plugin}
+       \item SBT Android Plugin \url{https://github.com/jberkel/android-plugin}
+      \end{itemize}
 
-    \begin{frame}
-      \frametitle{Gradle Android Plugin}
     \end{frame}
 
     \begin{frame}
@@ -117,15 +127,13 @@
 
   \subsection{Other Languages}
     \begin{frame}
-      \frametitle{JRuby}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Scala}
-    \end{frame}
-
-    \begin{frame}
-      \frametitle{Csharp}
+      \frametitle{Other Languages}
+      \begin{itemize}
+      \item JRuby
+      \item Scala
+      \item C/C++
+      \item CSharp
+      \end{itemize}
     \end{frame}
 
   \subsection{Other Development Tools}
@@ -135,17 +143,20 @@
       \begin{itemize}
         \item<1->Droid at Screen 
         \item<2->dex2jar and others
+        \item<3->Android2PO - Converter Android strings to gettext \url{https://github.com/miracle2k/android2po}
       \end{itemize}
     \end{frame}
 
 \section{Development Libraries}
+
+
   \subsection{Java Libraries}
 
     \begin{frame}
       \frametitle{}
       \begin{itemize}
         \item<1->jackson
-        \item<2->dex2jar and others
+        \item<2->gson
       \end{itemize}
     \end{frame}
 
@@ -154,16 +165,29 @@
     \begin{frame}
       \frametitle{Android Specific Libraries}
       \begin{itemize}
-        \item<1->Roboguice 
-        \item<2->Androidannotations
-        \item<3->DroidFu
-        \item<4->GreenDroid
-        \item<5->AndEngine
-        \item<6->http://actionbarsherlock.com/
-      \end{itemize}
+        \item<1->Roboguice \url{http://roboguice.org} 
+        \item<2->AndroidAnnotations \url{http://code.google.com/p/androidannotations/}
+        \item<3->DroidFu \url{http://github.com/kaeppler/droid-fu}
+        \item<4->OpenIntents \url{http://code.google.com/p/openintents/}
+        \item<5->AndEngine \url{http://www.andengine.org/}
+        \item<6->ksoap2-android \url{http://code.google.com/p/ksoap2-android/}
+        \item<7->WSDL2Android \url{https://github.com/kigero/WSDL2Android}
+        \item<8->CommonsWare Android Components CWAC \url{https://github.com/commonsguy}  
+        \item<9->AndroidAsync \url{https://bitbucket.org/hal/android-async/}  
+        \item DroidKit\url{https://github.com/droidkit/droidkit}
+\end{itemize}
     \end{frame}
 
   \subsection{Android UI Libraries}
+
+    \begin{frame}
+      \frametitle{UI Libraries}
+      \begin{itemize}
+       \item<1-> GreenDroid \url{https://github.com/cyrilmottier/GreenDroid}
+       \item<2-> ActionBarSherlock \url{http://actionbarsherlock.com/} 
+      \end{itemize}
+
+    \end{frame}
 
     \begin{frame}
       \frametitle{AndroidSherlock}
@@ -177,10 +201,10 @@
     \begin{frame}
       \frametitle{Android Testing Libraries}
       \begin{itemize}
-        \item<1->Robotium 
-        \item<2->Robolectric
-        \item<3->Calculon
-        \item<4->unit test copy tool
+        \item<1->Robotium \url{http://robotium.org}
+        \item<2->Robolectric \url{http://robolectric.org}
+        \item<3->Calculon \url{https://github.com/kaeppler/calculon}
+        \item<4->Android JUnit Report \url{https://github.com/jsankey/android-junit-report}
       \end{itemize}
     \end{frame}
 
@@ -189,6 +213,10 @@
 
     \begin{frame}
       \frametitle{i-jetty}
+      \begin{itemize}
+       \item i-jetty \url{http://code.google.com/p/i-jetty/}
+      \end{itemize}
+
     \end{frame}
 
     \begin{frame}
@@ -217,23 +245,32 @@
        \item<3-> Yes and no - cooperation with upstream projects
        \item<4-> No - binary blobs for drivers and other parts
       \end{itemize}
-
-    yes and no, both, lots of it is, stronger community can push to more openness
-
     \end{frame}
 
   \subsection{Android part of Java Community?}
     \begin{frame}
      \frametitle{Android part of the Java Community?}
      \begin{itemize}
-      \item<1-> Yes - Android itself and tools
-      \item<2-> Yes - 
-     \end{itemize}
+      \item<1-> Yes - parts of Android itself
+      \item<2-> Yes - tooling around Android
+      \item<3-> Yes - lots of libraries and tooling from rest of Java universe
+      \item<4-> Yes - lots of people from Java community also in Android community
+      \item<5-> Yes - lots of JVM related aspects as well e.g. Scala, JRuby, Processing, Groovy...
+      \end{itemize}
     \end{frame}
   
   \subsection{Android part of Open Source Community?}
     \begin{frame}
-     \frametitle{Android part of Open Source Community?} 
+     \frametitle{Android part of Open Source Community?}
+     \begin{itemize}
+      \item<1-> Yes - part of Apache Community
+      \item<2-> Yes - part of Eclipse Community
+      \item<3-> Yes - part of Ruby, Scala, Groovy/Gradle...
+      \item<4-> Yes - lots of open source libraries specifically to Android
+      \item<5-> Yes - 
+      \item<6-> Yes - 
+      \item<7-> Yes - 
+     \end{itemize}
     \end{frame}
 
   \subsection{Overall Conclusions}
