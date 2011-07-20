@@ -9,7 +9,7 @@
 \date{June, 2011}
 \institute[2011]{simpligility technologies inc.\\[\medskipamount]
       \includegraphics[scale=0.6]{simpligility.png}%
- }
+}
 
 \logo{\includegraphics[scale=0.25]{simpligility.png}}
 \newcommand{\surl}[1] {{\tiny \url{#1}}}
@@ -21,7 +21,7 @@
 \end{frame}
 
 \begin{frame}{Table of Contents}
-  SDK, ADT and beyond
+  Open Source Android Development Tools - SDK, ADT and beyond
   \setcounter{tocdepth}{1}
   \tableofcontents
 \end{frame}
@@ -36,35 +36,35 @@
   \subsection{Components}
     \begin{frame}{What components make up Android codebase?}
       \begin{description}
-        \item<1->Android Proper - as found on your device
-        \item<2->Android Open Source Project AOSP - subset of above 
-        \item<3->Android Software Development Kit SDK - for Java based development applications
-        \item<4->Android Native Development Kit - for C/C++ based development
-        \item<5->Android Open Accessory Development Kit ADK - for USB based hardware hacking
-        \item<6->Android Development Toolkit ADT - Eclipse plugin for Android development  
-    \end{description}
+        \item<1->[Android Proper] as found on your device
+        \item<2->[Android Open Source Project AOSP] subset of above 
+        \item<3->[Android Software Development Kit SDK] for Java based development applications
+        \item<4->[Android Native Development Kit NDK] for C/C++ based development
+        \item<5->[Android Open Accessory Development Kit ADK] for USB based hardware hacking
+        \item<6->[Android Development Toolkit ADT] Eclipse plugin for Android development  
+      \end{description}
     \end{frame}
 
   \subsection{Android Proper}
     \begin{frame}{Android Proper - As Found on Your Device}
-    \begin{description}
-      \item<1->Linux
-      \item<2->Apache Harmony 
-      \item<3->Lots of other open source components
-      \item<4->AOSP bits
-      \item<5->binary device driver and other blobs 
-      \item<6->custom parts from manufacturer and provider
-    \end{description}
+      \begin{itemize}
+        \item<1->Linux
+        \item<2->Apache Harmony 
+        \item<3->Lots of other open source components
+        \item<4->AOSP bits
+        \item<5->binary device driver and other blobs 
+        \item<6->custom parts from manufacturer and provider
+      \end{itemize}
     \end{frame}
   
   \subsection{AOSP}
     \begin{frame}{Android Open Source Project AOSP}
-      \begin{description}
+      \begin{itemize}
         \item<1->open source drops
         \item<2->base for custom roms and such
         \item<3->numerous specific components e.g. Dalvik
         \item<4->various forks from upstream projects
-      \end{description}
+      \end{itemize}
     \end{frame}
 
   \subsection{ADT}
@@ -85,33 +85,29 @@
 
     \begin{frame}{Other IDE's}
       \begin{description}
-       \item<1->[Motorola Motodev Studio for Android] \hfill \\  partly open source, commiting upstream to ADT and Eclipse Sequabout motodev, some bla bal
-\item<2->[Jetbrains IntelliJ IDEA CE] \hfill \\ fully open source, includes Android support
-        \item<3->[Oracle Netbeans] \hfill \\ fully open source, community plugin for Android
-\surl{http://kenai.com/projects/nbandroid/}
-\end{description}
-
+        \item<1->[Motorola Motodev Studio for Android] \hfill \\  partly open source, commiting upstream to ADT and Eclipse Sequoia \surl{http://developer.motorola.com/docstools/motodevstudio/}
+        \item<2->[Jetbrains IntelliJ IDEA CE] \hfill \\ fully open source, includes Android support \surl{http://www.jetbrains.org/}
+        \item<3->[Oracle Netbeans] \hfill \\ fully open source, community plugin for Android \surl{http://kenai.com/projects/nbandroid/}
+      \end{description}
     \end{frame}
-
 
   \subsection{Build Tools}
 
     \begin{frame}{Maven Android Plugin and Friends}
       \begin{description}
-       \item Maven Android Plugin \surl{http://code.google.com/p/maven-android-plugin/}
-       \item Maven Android SDK Deployer \surl{https://github.com/mosabua/maven-android-sdk-deployer}
-       \item Android4Maven \surl{http://sourceforge.net/projects/android4maven/}
-       \item M2E Android \surl{https://github.com/rgladwell/m2e-android}
-       \item AndroidSDKFido \surl{https://github.com/joakime/android-sdkfido}
-       \item Android RIndirect \surl{https://github.com/akquinet/android-rindirect}
+       \item<1->[Maven Android Plugin] \surl{http://code.google.com/p/maven-android-plugin/}
+       \item<2->[Maven Android SDK Deployer] \surl{https://github.com/mosabua/maven-android-sdk-deployer}
+       \item<3->[Android4Maven] \surl{http://sourceforge.net/projects/android4maven/}
+       \item<4->[M2E Android] \surl{https://github.com/rgladwell/m2e-android}
+       \item<5->[AndroidSDKFido] \surl{https://github.com/joakime/android-sdkfido}
+       \item<6->[Android RIndirect] \surl{https://github.com/akquinet/android-rindirect}
       \end{description}
-
     \end{frame}
 
     \begin{frame}{Others}
       \begin{description}
-       \item Gradle Android Plugin \surl{https://github.com/jvoegele/gradle-android-plugin}
-       \item SBT Android Plugin \surl{https://github.com/jberkel/android-plugin}
+       \item<1->[Gradle Android Plugin] \surl{https://github.com/jvoegele/gradle-android-plugin}
+       \item<2->[SBT Android Plugin] \surl{https://github.com/jberkel/android-plugin}
       \end{description}
     \end{frame}
 
@@ -141,34 +137,35 @@
        \item Baitha \surl{https://github.com/sattvik/baitha}
        \item Positronic Net \surl{https://github.com/rst/positronic_net}
       \end{itemize}
-
     \end{frame}
-
-
 
   \subsection{Other Development Tools}
 
     \begin{frame}{Other Development Tools}
       \begin{description}
-      
-        \item<1->Droid at Screen \surl{http://blog.ribomation.com/2010/01/droidscreen/}
-        \item DroidDraw \surl{http://www.droiddraw.org/} 
-        \item<2->dex2jar \surl{http://code.google.com/p/dex2jar/}
-        \item[smali/baksmali] \hfill \\ dex assembler/disassembler \surl{http://code.google.com/p/smali/}
-        \item<3->Android2PO - Converter Android strings to gettext \surl{https://github.com/miracle2k/android2po}
+        \item<1->[Droid at Screen] device screen recorder/projector \surl{http://blog.ribomation.com/2010/01/droidscreen/}
+
+        \item<2->[DroidDraw] UI build tool \surl{http://www.droiddraw.org/}
+ 
+        \item<3->[dex2jar] converter from dex to jar format \surl{http://code.google.com/p/dex2jar/}
+
+        \item<4->[smali/baksmali] \hfill \\ dex assembler/disassembler \surl{http://code.google.com/p/smali/}
+
+        \item<5->Android2PO - Converter Android strings to gettext \surl{https://github.com/miracle2k/android2po}
       \end{description}
    \end{frame}
 
 \section{Development Libraries}
 
-
   \subsection{Java Libraries}
 
     \begin{frame}{Java Libraries suitable for Android}
       \begin{itemize}
-        \item<1->jackson
-        \item<2->gson
-        \item SimpleXML \surl{http://simple.sourceforge.net/home.php}
+        \item<1->[jackson] JSON library 
+        \item<2->[gson] 
+        
+        \item<3->[SimpleXML] XML serialization framework \surl{http://simple.sourceforge.net/home.php}
+        
       \end{itemize}
     \end{frame}
 
@@ -176,17 +173,17 @@
 
     \begin{frame}{Android Specific Libraries}
       \begin{itemize}
-        \item<1->Roboguice \surl{http://roboguice.org} 
-        \item<2->AndroidAnnotations \surl{http://code.google.com/p/androidannotations/}
-        \item<3->DroidFu \surl{http://github.com/kaeppler/droid-fu}
-        \item<4->OpenIntents \surl{http://code.google.com/p/openintents/}
-        \item<5->AndEngine \surl{http://www.andengine.org/}
-        \item<6->ksoap2-android \surl{http://code.google.com/p/ksoap2-android/}
-        \item<7->WSDL2Android \surl{https://github.com/kigero/WSDL2Android}
-        \item<8->CommonsWare Android Components CWAC \surl{https://github.com/commonsguy}  
-        \item<9->AndroidAsync \surl{https://bitbucket.org/hal/android-async/}  
-        \item DroidKit\surl{https://github.com/droidkit/droidkit}
-\end{itemize}
+        \item<1->[Roboguice] \surl{http://roboguice.org} 
+        \item<2->[AndroidAnnotations] \surl{http://code.google.com/p/androidannotations/}
+        \item<3->[DroidFu] \surl{http://github.com/kaeppler/droid-fu}
+        \item<4->[OpenIntents] \surl{http://code.google.com/p/openintents/}
+        \item<5->[AndEngine] \surl{http://www.andengine.org/}
+        \item<6->[ksoap2-android] \surl{http://code.google.com/p/ksoap2-android/}
+        \item<7->[WSDL2Android] \surl{https://github.com/kigero/WSDL2Android}
+        \item<8->[CommonsWare Android Components CWAC] \surl{https://github.com/commonsguy}  
+        \item<9->[AndroidAsync] \surl{https://bitbucket.org/hal/android-async/}  
+        \item<10->[DroidKit] \surl{https://github.com/droidkit/droidkit}
+      \end{itemize}
     \end{frame}
 
     \begin{frame}{Example RoboGuice}
@@ -198,11 +195,10 @@
 
     \begin{frame}{UI Libraries}
       \begin{itemize}
-       \item<1-> GreenDroid \surl{https://github.com/cyrilmottier/GreenDroid}
-       \item<2-> ActionBarSherlock \surl{http://actionbarsherlock.com/} 
-       \item Android Wheel \surl{http://code.google.com/p/android-wheel/}
+       \item<1->[GreenDroid] \surl{https://github.com/cyrilmottier/GreenDroid}
+       \item<2->[ActionBarSherlock] \surl{http://actionbarsherlock.com/} 
+       \item<3->[Android Wheel] \surl{http://code.google.com/p/android-wheel/}
       \end{itemize}
-
     \end{frame}
 
     \begin{frame}{AndroidSherlock}
@@ -215,33 +211,32 @@
 
     \begin{frame}{Android Testing Libraries}
       \begin{itemize}
-        \item<1->Robotium \surl{http://robotium.org}
-        \item<2->Robolectric \surl{http://robolectric.org}
-        \item<3->Calculon \surl{https://github.com/kaeppler/calculon}
-        \item<4->Android JUnit Report \surl{https://github.com/jsankey/android-junit-report}
+        \item<1->[Robotium] \surl{http://robotium.org}
+        \item<2->[Robolectric] \surl{http://robolectric.org}
+        \item<3->[Calculon] \surl{https://github.com/kaeppler/calculon}
+        \item<4->[Android JUnit Report] \surl{https://github.com/jsankey/android-junit-report}
       \end{itemize}
     \end{frame}
 
     \begin{frame}{Testing Demo}
       \begin{itemize}
        \item Robotium
-        \item Robolectric
+       \item Robolectric
       \end{itemize}
-
     \end{frame}
-
-
 
   \subsection{Others of interest}  
 
     \begin{frame}{i-jetty}
-      \begin{itemize}
-       \item i-jetty \surl{http://code.google.com/p/i-jetty/}
-      \end{itemize}
-
+      \begin{description}
+       \item<1->[i-jetty] servlet container running on the device \surl{http://code.google.com/p/i-jetty/}
+      \end{description}
     \end{frame}
 
-    \begin{frame}{web based frameworks}
+    \begin{frame}{Web based frameworks}
+      \begin{description}
+       \item<1->[PhoneGap] test
+      \end{description}
     \end{frame}
 
 \section{Conclusions}
