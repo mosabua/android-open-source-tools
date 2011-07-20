@@ -9,6 +9,8 @@
 \date{June, 2011}
 \institute[2011]{simpligility technologies inc.}
 
+\newcommand{\surl}[1] {{\tiny \url{#1}}}
+
 \begin{document}
 
 \begin{frame}
@@ -102,12 +104,12 @@
     \begin{frame}
       \frametitle{Maven Android Plugin and Friends}
       \begin{itemize}
-       \item Maven Android Plugin \url{http://code.google.com/p/maven-android-plugin/}
-       \item Maven Android SDK Deployer \url{https://github.com/mosabua/maven-android-sdk-deployer}
-       \item Android4Maven \url{http://sourceforge.net/projects/android4maven/}
-       \item M2E Android \url{https://github.com/rgladwell/m2e-android}
-       \item AndroidSDKFido \url{https://github.com/joakime/android-sdkfido}
-       \item Android RIndirect \url{https://github.com/akquinet/android-rindirect}
+       \item Maven Android Plugin \surl{http://code.google.com/p/maven-android-plugin/}
+       \item Maven Android SDK Deployer \surl{https://github.com/mosabua/maven-android-sdk-deployer}
+       \item Android4Maven \surl{http://sourceforge.net/projects/android4maven/}
+       \item M2E Android \surl{https://github.com/rgladwell/m2e-android}
+       \item AndroidSDKFido \surl{https://github.com/joakime/android-sdkfido}
+       \item Android RIndirect \surl{https://github.com/akquinet/android-rindirect}
       \end{itemize}
 
     \end{frame}
@@ -118,23 +120,40 @@
        \item Gradle Android Plugin \url{https://github.com/jvoegele/gradle-android-plugin}
        \item SBT Android Plugin \url{https://github.com/jberkel/android-plugin}
       \end{itemize}
-
     \end{frame}
 
     \begin{frame}
-      \frametitle{SBT Android Plugin}
+      \frametitle{Maven Android Plugin - Example}
+      \begin{itemize}
+       \item deploy to multiple devices
+       \item reuse of Maven plugins
+       \item use of libraries and Android components easy
+      \end{itemize}
     \end{frame}
 
   \subsection{Other Languages}
     \begin{frame}
       \frametitle{Other Languages}
+      Java is main language for development and API but also possible are 
       \begin{itemize}
+      \item C/C++ (via NDK first class)
       \item JRuby
       \item Scala
-      \item C/C++
-      \item CSharp
+      \item C\#
+      \item JavaScript
       \end{itemize}
     \end{frame}
+
+    \begin{frame}
+     \frametitle{Example - Scala libraries}
+      \begin{itemize}
+       \item Baitha \url{https://github.com/sattvik/baitha}
+       \item Positronic Net \url{https://github.com/rst/positronic_net}
+      \end{itemize}
+
+    \end{frame}
+
+
 
   \subsection{Other Development Tools}
 
@@ -178,6 +197,12 @@
 \end{itemize}
     \end{frame}
 
+    \begin{frame}
+     \frametitle{Example RoboGuice}
+      logo, code sample
+    \end{frame}
+  
+
   \subsection{Android UI Libraries}
 
     \begin{frame}
@@ -185,6 +210,7 @@
       \begin{itemize}
        \item<1-> GreenDroid \url{https://github.com/cyrilmottier/GreenDroid}
        \item<2-> ActionBarSherlock \url{http://actionbarsherlock.com/} 
+       \item Android Wheel \url{http://code.google.com/p/android-wheel/}
       \end{itemize}
 
     \end{frame}
@@ -207,6 +233,16 @@
         \item<4->Android JUnit Report \url{https://github.com/jsankey/android-junit-report}
       \end{itemize}
     \end{frame}
+
+    \begin{frame}
+     \frametitle{Testing Demo}
+      \begin{itemize}
+       \item Robotium
+        \item Robolectric
+      \end{itemize}
+
+    \end{frame}
+
 
 
   \subsection{Others of interest}  
@@ -232,7 +268,7 @@
       \item<1-> Yes - default application programming language
       \item<2-> Yes - API is Java based
       \item<3-> No - not using a standard compliant Java Virtual Machine Runtime
-      \item<4-> No - only using parts of the standard class libraries
+      \item<4-> No - only using parts of the standard class libraries and 
       \end{itemize}
     \end{frame}
 
@@ -242,7 +278,7 @@
       \begin{itemize}
        \item<1-> Yes, in time - AOSP open sourced in drops
        \item<2-> Yes -ADT fully open source
-       \item<3-> Yes and no - cooperation with upstream projects
+       \item<3-> Yes and no - cooperation with upstream projects patchy but exists
        \item<4-> No - binary blobs for drivers and other parts
       \end{itemize}
     \end{frame}
@@ -254,7 +290,7 @@
       \item<1-> Yes - parts of Android itself
       \item<2-> Yes - tooling around Android
       \item<3-> Yes - lots of libraries and tooling from rest of Java universe
-      \item<4-> Yes - lots of people from Java community also in Android community
+      \item<4-> Yes - lots of people from Java community, also part of Android community
       \item<5-> Yes - lots of JVM related aspects as well e.g. Scala, JRuby, Processing, Groovy...
       \end{itemize}
     \end{frame}
@@ -267,9 +303,8 @@
       \item<2-> Yes - part of Eclipse Community
       \item<3-> Yes - part of Ruby, Scala, Groovy/Gradle...
       \item<4-> Yes - lots of open source libraries specifically to Android
-      \item<5-> Yes - 
-      \item<6-> Yes - 
-      \item<7-> Yes - 
+      \item<5-> Yes - lots of projects on Github, Google Code, ...
+      \item<6-> Yes - move towards Maker community with ADK
      \end{itemize}
     \end{frame}
 
@@ -277,10 +312,10 @@
     \begin{frame}
       \frametitle {Overall conclusion}
       \begin{itemize}
-        \item<1-> Despite lots of flaws and kinks
-        \item<2-> Android is part of the Java and Open Source communites
-        \item<3-> Android is touches a lot more communities 
-        \item<4-> Android is a great chance to unify 
+        \item<1-> Despite lots of flaws and kinks, makes it interesting ;-)
+        \item<2-> Android is part of the Java and Open Source communities
+        \item<3-> Android touches a lot more communities and brings them together
+        \item<4-> Android is a great chance to unify and collaborate 
       \end{itemize}
     \end{frame}
 
@@ -291,8 +326,8 @@
         \item<1-> Buy an unlocked/unlockable device
         \item<2-> Use a custom ROM
         \item<3-> Ask for open source drops of AOSP 
-        \item<4-> Encourage patches to upstream projects
-        \item<5-> Ask for open sourcing of tools
+        \item<4-> Encourage patches to upstream projects and 
+        \item<5-> Ask for open sourcing of any closed parts, tools...
         \item<6-> Contribute and cooperate yourself! 
       \end{itemize}
     \end{frame}
