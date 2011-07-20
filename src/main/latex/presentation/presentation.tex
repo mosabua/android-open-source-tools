@@ -122,26 +122,7 @@
       \end{itemize}
     \end{frame}
 
-  \subsection{Other Languages}
-    \begin{frame}{Other Languages}
-      Java is main language for development and API but also possible are 
-      \begin{itemize}
-      \item C/C++ (via NDK first class)
-      \item JRuby
-      \item Scala
-      \item C\#
-      \item JavaScript
-      \item Processing \surl{http://wiki.processing.org/w/Android}
-      \end{itemize}
-    \end{frame}
 
-    \begin{frame}{Example - Scala libraries}
-      \begin{itemize}
-       \item Baitha \surl{https://github.com/sattvik/baitha}
-       \item Positronic Net \surl{https://github.com/rst/positronic_net}
-       \item Borachio mocking library \surl{http://borachio.com/}
-      \end{itemize}
-    \end{frame}
 
   \subsection{Other Development Tools}
 
@@ -153,9 +134,9 @@
  
         \item<3->[dex2jar] converter from dex to jar format \surl{http://code.google.com/p/dex2jar/}
 
-        \item<4->[smali/baksmali] \hfill \\ dex assembler/disassembler \surl{http://code.google.com/p/smali/}
+        \item<4->[smali/baksmali] dex assembler/disassembler \surl{http://code.google.com/p/smali/}
 
-        \item<5->Android2PO - Converter Android strings to gettext \surl{https://github.com/miracle2k/android2po}
+        \item<5->[Android2PO] Converter Android strings to gettext \surl{https://github.com/miracle2k/android2po}
       \end{description}
    \end{frame}
 
@@ -164,24 +145,24 @@
   \subsection{Java Libraries}
 
     \begin{frame}{Java Libraries suitable for Android}
-      \begin{itemize}
+      \begin{description}
         \item<1->[jackson] JSON library 
-        \item<2->[gson] 
+        \item<2->[gson] JSON library
         
         \item<3->[SimpleXML] XML serialization framework \surl{http://simple.sourceforge.net/home.php}
 
-        \item<4->[ormlite] light-weight object relational mapping tool \surl{}
+        \item<4->[ormlite] light-weight object relational mapping tool \surl{http://ormlite.com/}
 
         \item<5->[Twitter4J] \surl{http://twitter4j.org/}
 
         
-      \end{itemize}
+      \end{description}
     \end{frame}
 
   \subsection{Android Specific Libraries}
 
     \begin{frame}{Android Specific Libraries}
-      \begin{itemize}
+      \begin{description}
         \item<1->[Roboguice] \surl{http://roboguice.org} 
         \item<2->[AndroidAnnotations] \surl{http://code.google.com/p/androidannotations/}
         \item<3->[DroidFu] \surl{http://github.com/kaeppler/droid-fu}
@@ -189,11 +170,11 @@
         \item<6->[ksoap2-android] \surl{http://code.google.com/p/ksoap2-android/}
         \item<7->[WSDL2Android] \surl{https://github.com/kigero/WSDL2Android}
         \item<8->[CommonsWare Android Components CWAC] \surl{https://github.com/commonsguy}
-    \end{itemize}
+    \end{description}
     \end{frame}
   
     \begin{frame}{Android Specific Libraries 2 }
-      \begin{itemize}
+      \begin{description}
         \item<9->[AndroidAsync] \surl{https://bitbucket.org/hal/android-async/}  
         \item<10->[DroidKit] \surl{https://github.com/droidkit/droidkit}
         \item[ZXing] \surl{http://code.google.com/p/zxing/}
@@ -205,7 +186,7 @@
         \item[OSMDroid] OpenStreetMap toolbox \surl{http://code.google.com/p/osmdroid/}
         \item[Android MapViewBalloons] \surl{https://github.com/jgilfelt/android-mapviewballoons}
         \item[Libs for Android] \surl{http://code.google.com/p/libs-for-android/}
-      \end{itemize}
+      \end{description}
     \end{frame}
 
     \begin{frame}{Example RoboGuice}
@@ -216,7 +197,7 @@
   \subsection{Android UI Libraries}
 
     \begin{frame}{UI Libraries}
-      \begin{itemize}
+      \begin{description}
        \item<1->[GreenDroid] \surl{https://github.com/cyrilmottier/GreenDroid}
        \item<2->[ActionBarSherlock] \surl{http://actionbarsherlock.com/} 
        \item<3->[Android Wheel] \surl{http://code.google.com/p/android-wheel/}
@@ -227,7 +208,7 @@
         \item[Android ColorPickerPreference] \surl{https://github.com/attenzione/android-ColorPickerPreference}
         \item[Android AutoFitTextView] \surl{https://github.com/grantland/android-autofittextview}
        
-      \end{itemize}
+      \end{description}
     \end{frame}
 
     \begin{frame}{AndroidSherlock}
@@ -239,27 +220,27 @@
 \subsection{Game Development Libraries}
 
     \begin{frame}{Game Development Libraries}
-      \begin{itemize}
+      \begin{description}
        \item<1->[libgdx] \surl{http://libgdx.badlogicgames.com/}
         \item<2->[AndEngine] \surl{http://www.andengine.org/}
         
        \item<3->[forget3D] OpenGL ES\surl{http://code.google.com/p/forget3d/}
         \item<4->[min3d] \surl{http://code.google.com/p/min3d/}
         \item<5->[Angle] game library for 2D games using OpenGL ES \surl{http://code.google.com/p/angle/}
-      \end{itemize}
+      \end{description}
     \end{frame}
 
   \subsection{Android Testing Libraries}
 
     \begin{frame}{Android Testing Libraries}
-      \begin{itemize}
+      \begin{description}
         \item<1->[Robotium] \surl{http://robotium.org}
         \item<2->[Robolectric] \surl{http://robolectric.org}
         \item<3->[Calculon] \surl{https://github.com/kaeppler/calculon}
         \item<4->[Android JUnit Report] \surl{https://github.com/jsankey/android-junit-report}
         \item<5->[Memory Sucker] \surl{https://github.com/nollbit/memory-sucker}
         \item<6->[Android Mock] \surl{http://code.google.com/p/android-mock/}
-      \end{itemize}
+      \end{description}
     \end{frame}
 
     \begin{frame}{Testing Demo}
@@ -285,6 +266,27 @@
       \begin{description}
        \item<1->[PhoneGap] test
       \end{description}
+    \end{frame}
+
+  \subsection{Other Languages}
+    \begin{frame}{Other Languages}
+      Java is main language for development and API but also possible are 
+      \begin{itemize}
+      \item C/C++ (via NDK first class)
+      \item JRuby
+      \item Scala
+      \item C\#
+      \item JavaScript 
+      \item Processing \surl{http://wiki.processing.org/w/Android}
+      \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Example - Scala libraries}
+      \begin{itemize}
+       \item Baitha \surl{https://github.com/sattvik/baitha}
+       \item Positronic Net \surl{https://github.com/rst/positronic_net}
+       \item Borachio mocking library \surl{http://borachio.com/}
+      \end{itemize}
     \end{frame}
 
 \section{Conclusions}
@@ -335,10 +337,10 @@
   \subsection{Overall Conclusions}
     \begin{frame}{Overall conclusion}
       \begin{itemize}
-        \item<1-> Despite lots of flaws and kinks, makes it interesting ;-)
+        \item<1-> Despite lots of flaws and kinks that make things interesting
         \item<2-> Android is part of the Java and Open Source communities
-        \item<3-> Android touches a lot more communities and brings them together
-        \item<4-> Android is a great chance to unify and collaborate 
+        \item<3-> Android touches a lot of other communities and brings them together
+        \item<4-> Android is a great chance to collaborate and learn
       \end{itemize}
     \end{frame}
 
