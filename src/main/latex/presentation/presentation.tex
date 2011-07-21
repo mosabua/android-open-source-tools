@@ -38,12 +38,12 @@
   \subsection{Components}
     \begin{frame}{What components make up Android codebase?}
       \begin{description}
-        \item<1->[Android Proper] as found on your device
-        \item<2->[Android Open Source Project AOSP] subset of above 
-        \item<3->[Android Software Development Kit SDK] for Java based development applications
-        \item<4->[Android Native Development Kit NDK] for C/C++ based development
-        \item<5->[Android Open Accessory Development Kit ADK] for USB based hardware hacking
-        \item<6->[Android Development Toolkit ADT] Eclipse plugin for Android development  
+        \item<1->[Android Proper] \hfill \\ as found on your device
+        \item<2->[Android Open Source Project AOSP] \hfill  \\ subset of above 
+        \item<3->[Android Software Development Kit SDK] \hfill  \\ for Java based development applications
+        \item<4->[Android Native Development Kit NDK] \hfill  \\ for C/C++ based development
+        \item<5->[Android Open Accessory Development Kit ADK] \hfill \\ for USB based hardware hacking
+        \item<6->[Android Development Toolkit ADT] \hfill  \\ Eclipse plugin for Android development  
       \end{description}
     \end{frame}
 
@@ -53,29 +53,32 @@
         \item<1->Linux
         \item<2->Apache Harmony 
         \item<3->Lots of other open source components
-        \item<4->AOSP bits
+        \item<4->Custom Android related components like Dalvik VM
         \item<5->binary device driver and other blobs 
-        \item<6->custom parts from manufacturer and provider
+        \item<6->patched components, custom drivers and different applications from manufacturer and provider
       \end{itemize}
     \end{frame}
   
   \subsection{AOSP}
     \begin{frame}{Android Open Source Project AOSP}
       \begin{itemize}
-        \item<1->open source drops
-        \item<2->base for custom roms and such
-        \item<3->numerous specific components e.g. Dalvik
-        \item<4->various forks from upstream projects
+        \item<1->Linux, Apache Harmony, OpenGL ES and lots more
+        \item<2->numerous specific components e.g. Dalvik
+        \item<3->various forks from upstream project
+        \item<4->base for custom roms and such
+        \item<5->various different open source licenses
+        \item<6->source released in drops, more or less late
       \end{itemize}
     \end{frame}
 
   \subsection{Android Tools}
     \begin{frame}{Android Tools}
-      \begin{description}
-        \item<1->open source, fully 
+      \begin{itemize}
+        \item<1->development tools like ADT, DDMS and related tools that form SDK 
         \item<2->cooperating with Eclipse projects, external contributors ...
-        \item<3->\surl{http://tools.android.com/}
-      \end{description}
+        \item<3->fully open source, all commits right to public git repo
+        \item<4->available at \surl{http://tools.android.com/}
+      \end{itemize}
     \end{frame}
 
 \section{Development Tools}
@@ -83,14 +86,20 @@
   \subsection{IDEs}
 
     \begin{frame}{Eclipse and ADT and friends}
-      
+        \begin{itemize}
+          \item<1-> default supported development environment 
+          \item<2-> full tool suite including debugging, profiling and so on
+          \item<3-> graphical layout editor
+          \item<4-> very powerful also with help of further Eclipse plugins (e.g. Mylyn, egit\dots)
+          \item<5-> well architected so that most components work outside Eclipse too
+        \end{itemize}
     \end{frame}
 
     \begin{frame}{Other IDE's}
       \begin{description}
-        \item<1->[Motorola Motodev Studio for Android \surl{http://developer.motorola.com/docstools/motodevstudio/}] \hfill \\  partly open source, commiting upstream to ADT and Eclipse Sequoia 
+        \item<1->[Motorola MOTODEV Studio for Android \surl{http://developer.motorola.com/docstools/motodevstudio/}]  partly open source, commiting upstream to ADT and Eclipse Sequoyah \surl{http://eclipse.org/sequoyah/} 
         \item<2->[Jetbrains IntelliJ IDEA CE \surl{http://www.jetbrains.org/}] \hfill \\ fully open source, includes Android support 
-        \item<3->[Oracle Netbeans \surl{http://kenai.com/projects/nbandroid/}] \hfill \\ fully open source, community plugin for Android 
+        \item<3->[Oracle Netbeans \surl{http://kenai.com/projects/nbandroid/}] \hfill \\ fully open source, community maintained plugin for Android 
         \item<4->[Emacs \surl{http://gitorious.org/emacs-android-minor-mode}] \hfill \\ fully open source, 
       \end{description}
     \end{frame}
@@ -99,12 +108,12 @@
 
     \begin{frame}{Maven Android Plugin and Friends}
       \begin{description}
-       \item<1->[Maven Android Plugin \surl{http://code.google.com/p/maven-android-plugin/}] build apk, deploy to devices, run tests and lots more
-       \item<2->[Maven Android SDK Deployer \surl{https://github.com/mosabua/maven-android-sdk-deployer}] deploy artifacts from SDK to Maven repository
-       \item<3->[Android4Maven \surl{http://sourceforge.net/projects/android4maven/}] bundle android.jar from AOSP to submit to Maven central
-       \item<4->[M2E Android \surl{https://github.com/rgladwell/m2e-android}] Maven build play nice with ADT
-       \item<5->[AndroidSDKFido \surl{https://github.com/joakime/android-sdkfido}] build source and javadoc artifacts
-       \item<6->[Android RIndirect \surl{https://github.com/akquinet/android-rindirect}] help with component reuse
+       \item<1->[Maven Android Plugin \surl{http://code.google.com/p/maven-android-plugin/}] \hfill \\ build apk, deploy to devices, run tests and lots more
+       \item<2->[Maven Android SDK Deployer \surl{https://github.com/mosabua/maven-android-sdk-deployer}] \hfill \\ deploy artifacts from SDK to Maven repository
+       \item<3->[Android4Maven \surl{http://sourceforge.net/projects/android4maven/}] \hfill \\ bundle android.jar from AOSP to submit to Maven central
+       \item<4->[M2E Android \surl{https://github.com/rgladwell/m2e-android}] \hfill \\ Maven build to play nice with ADT
+       \item<5->[AndroidSDKFido \surl{https://github.com/joakime/android-sdkfido}] \hfill \\  build source and javadoc artifacts
+       \item<6->[Android RIndirect \surl{https://github.com/akquinet/android-rindirect}] \hfill \\  help with component reuse
       \end{description}
     \end{frame}
 
