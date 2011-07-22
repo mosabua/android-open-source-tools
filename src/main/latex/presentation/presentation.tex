@@ -30,11 +30,11 @@
 
 \begin{frame}{About Manfred}
   \begin{itemize}
-    \item Android application developer
-    \item Core committer Maven Android Plugin
-    \item Project Owner ksoap2-android
-    \item Committer RoboGuice
-    \item Committer Hudson
+    \item<1-> Android application developer
+    \item<2-> Core committer Maven Android Plugin
+    \item<3-> Project Owner ksoap2-android
+    \item<4-> Committer RoboGuice
+    \item<5-> Committer Hudson
   \end{itemize}
 
 \end{frame}
@@ -104,7 +104,7 @@
 
     \begin{frame}{Other IDE's}
       \begin{description}
-        \item<1->[Motorola MOTODEV Studio for Android \surl{http://developer.motorola.com/docstools/motodevstudio/}]  partly open source, commiting upstream to ADT and Eclipse Sequoyah \surl{http://eclipse.org/sequoyah/} 
+        \item<1->[Motorola MOTODEV Studio \surl{http://developer.motorola.com/docstools/motodevstudio/}] \hfill \\  partly open source, commiting upstream to ADT and Eclipse Sequoyah \surl{http://eclipse.org/sequoyah/} 
         \item<2->[Jetbrains IntelliJ IDEA CE \surl{http://www.jetbrains.org/}] \hfill \\ fully open source, includes Android support 
         \item<3->[Oracle Netbeans \surl{http://kenai.com/projects/nbandroid/}] \hfill \\ fully open source, community maintained plugin for Android 
         \item<4->[Emacs \surl{http://gitorious.org/emacs-android-minor-mode}] \hfill \\ fully open source, 
@@ -127,8 +127,8 @@
     \begin{frame}{Others}
       \begin{description}
         \item<1->[Gradle Android Plugin] \surl{https://code.google.com/p/gradle-android-plugin/} \hfill \\ for the Groovy based build system Gradle
-        \item<2->[SBT Android Plugin] \surl{https://github.com/jberkel/android-plugin} \hfill \\ for the Scala based build system SBT, Scala based Android applications
-        \item<3->[Rake/Ruboto] for JRuby Android applications 
+    for    \item<2->[SBT Android Plugin] \surl{https://github.com/jberkel/android-plugin} \hfill \\ for the Scala based build system SBT, Scala based Android applications
+        \item<3->[Rake/Ruboto/Maven] for JRuby Android applications 
       \end{description}
     \end{frame}
 
@@ -204,24 +204,34 @@
     \end{frame}
 
     \begin{frame}{Example RoboGuice}
-      logo, code sample
+      \begin{columns}[t]
+        \begin{column}{0.5\textwidth}
+          \begin{center}
+            \includegraphics[height=2.0in]{roboguice.png}
+          \end{center}
+        \end{column}
+
+        \begin{column}{0.5\textwidth}
+          Sample Code Here
+        \end{column}
+      \end{columns}
     \end{frame}
   
     \begin{frame}{UI Libraries and Widgets}
       \begin{description}
-        \item<1->[GreenDroid \surl{https://github.com/cyrilmottier/GreenDroid}] dfdf
-        \item<2->[svg-android \surl{http://code.google.com/p/svg-android/}] dfdf
-        \item<3->[View Flow for Android \surl{https://github.com/pakerfeldt/android-viewflow}] dfdf
-        \item<4->[ActionBarSherlock \surl{http://actionbarsherlock.com/}]  dfdf
-        \item<5->[Android Wheel \surl{http://code.google.com/p/android-wheel/}] dfdf
-        \item<6->[Android Actionbar \surl{https://github.com/johannilsson/android-actionbar}] dfdf
+        \item<1->[GreenDroid \surl{https://github.com/cyrilmottier/GreenDroid}] \hfill \\ application framework and UI widget collection
+        \item<2->[svg-android \surl{http://code.google.com/p/svg-android/}] \hfill \\ SVG rendering library
+        \item<3->[View Flow for Android \surl{https://github.com/pakerfeldt/android-viewflow}] \hfill \\ horizontally scrolling views
+        \item<4->[Android Wheel \surl{http://code.google.com/p/android-wheel/}] \hfill \\ wheel input control widget
+        \item<5->[ActionBarSherlock \surl{http://actionbarsherlock.com/}]  \hfill \\ ActionBar support for tablets and phones
+        \item<6->[Android Actionbar \surl{https://github.com/johannilsson/android-actionbar}] \hfill \\ ActionBar support for tablets and phones
       \end{description}
     \end{frame}
 
     \begin{frame}{More UI Libraries and Widgets}
       \begin{description}        
         \item<1->[Pull to Refresh for Android \surl{https://github.com/johannilsson/android-pulltorefresh}] \hfill \\ list refresh widget
-        \item<2->[Android ColorPickerPreference] \surl{https://github.com/attenzione/android-ColorPickerPreference}] \hfill \\ color picker
+        \item<2->[Android ColorPickerPreference \surl{https://github.com/attenzione/android-ColorPickerPreference}] \hfill \\ color picker
         \item<3->[Android AutoFitTextView \surl{https://github.com/grantland/android-autofittextview}] \hfill \\ dynamic font resizing in text view
         \item<4->[Android TextView Multiline Ellipse \surl{http://code.google.com/p/android-textview-multiline-ellipse/}] ellipse for multiline text view
         \item<5->[Android MapViewBalloons \surl{https://github.com/jgilfelt/android-mapviewballoons}] \hfill \\ UI widget for maps
@@ -238,45 +248,48 @@
 
     \begin{frame}{Game Development Libraries}
       \begin{description}
-       \item<1->[libgdx] \surl{http://libgdx.badlogicgames.com/}
-        \item<2->[AndEngine] \surl{http://www.andengine.org/}
-        
-       \item<3->[forget3D] OpenGL ES\surl{http://code.google.com/p/forget3d/}
-        \item<4->[min3d] \surl{http://code.google.com/p/min3d/}
-        \item<5->[Angle] game library for 2D games using OpenGL ES \surl{http://code.google.com/p/angle/}
+        \item<1->[libgdx \surl{http://libgdx.badlogicgames.com/}] \hfill \\ cross-platform 2D and 3D game development framework for Java/C/C++. 
+        \item<2->[AndEngine \surl{http://www.andengine.org/}] \hfill \\ Java based 2D OpenGL Game Engine for Android
+        \item<3->[forget3D \surl{http://code.google.com/p/forget3d/}] \hfill \\ OpenGL ES framework for Android, Win32, WinCE
+        \item<4->[min3d \surl{http://code.google.com/p/min3d/}] \hfill \\ lightweight 3d library/framework for Android using Java with OpenGL ES 
+        \item<5->[Angle  \surl{http://code.google.com/p/angle/}] \hfill \\ game library for 2D games using OpenGL ES
       \end{description}
     \end{frame}
 
-  \subsection{Android Testing Libraries}
+  \subsection{Android Testing Tools}
 
-    \begin{frame}{Android Testing Libraries}
+    \begin{frame}{Android Testing Tools}
       \begin{description}
-        \item<1->[Robotium] \surl{http://robotium.org}
-        \item<2->[Robolectric] \surl{http://robolectric.org}
-        \item<3->[Calculon] \surl{https://github.com/kaeppler/calculon}
-        \item<4->[Android JUnit Report] \surl{https://github.com/jsankey/android-junit-report}
-        \item<5->[Memory Sucker] \surl{https://github.com/nollbit/memory-sucker}
-        \item<6->[Android Mock] \surl{http://code.google.com/p/android-mock/}
+        \item<1->[Robotium \surl{http://robotium.org}] \hfill \\ \emph{Selenium} for Android
+        \item<2->[Robolectric \surl{http://robolectric.org}] \hfill \\ Android tests run on JVM
+        \item<3->[Calculon \surl{https://github.com/kaeppler/calculon}] \hfill \\ Android testing DSL
+        \item<4->[Android JUnit Report \surl{https://github.com/jsankey/android-junit-report}] \hfill \\ tool to load test report from device/emulator
+        \item<5->[Memory Sucker \surl{https://github.com/nollbit/memory-sucker}] \hfill \\ test tool to simulate low memory scenarios 
+        \item<6->[Android Mock \surl{http://code.google.com/p/android-mock/}] \hfill \\ object mocking library
       \end{description}
     \end{frame}
 
     \begin{frame}{Testing Demo}
-      \begin{itemize}
-       \item Robotium
-       \item Robolectric
-      \end{itemize}
+      \begin{columns}[t]
+        \begin{column}[c]{0.5\textwidth}
+          Robotium on DalvikVM
+        \end{column}
+        \begin{column}[c]{0.5\textwidth}
+          Robolectric on JVM
+        \end{column}
+      \end{columns}
     \end{frame}
 
   \subsection{Others of interest}  
 
-    \begin{frame}{i-jetty}
+    \begin{frame}{Others of interest}
       \begin{description}
-        \item<4->[OpenIntents] \surl{http://code.google.com/p/openintents/}
-        \item<1->[i-jetty] servlet container running on the device \surl{http://code.google.com/p/i-jetty/}
-        \item<2->[Android Screenshot library] programmatically take screenshots, n no root required \surl{http://code.google.com/p/android-screenshot-library/}
-        \item<3->[Android Alarm Database] \surl{http://code.google.com/p/android-alarm-database/}
-        \item<4->[Application Crash Report for Android ACRA] \surl{http://code.google.com/p/acra/}
-        \item<5->[Android Error Reporter] \surl{https://github.com/tomquist/Android-Error-Reporter}
+        \item<1->[OpenIntents \surl{http://code.google.com/p/openintents/}] \hfill \\ collection of reusable components and applications
+        \item<2->[i-jetty \surl{http://code.google.com/p/i-jetty/}] \hfill \\ servlet container running on the device 
+        \item<3->[Android Screenshot library \surl{http://code.google.com/p/android-screenshot-library/}] \hfill \\  programmatically take screenshots, n no root required 
+        \item<4->[Android Alarm Database \surl{http://code.google.com/p/android-alarm-database/}] \hfill \\ alarm application and toolkit 
+        \item<5->[Application Crash Report for Android ACRA \surl{http://code.google.com/p/acra/}] \hfill \\ crash report library
+        \item<6->[Android Error Reporter \surl{https://github.com/tomquist/Android-Error-Reporter}] \hfill \\ error report library
       \end{description}
     \end{frame}
 
