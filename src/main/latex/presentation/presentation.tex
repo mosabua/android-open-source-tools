@@ -3,11 +3,12 @@
 \usetheme[secheader]{Boadilla}
 \usecolortheme{crane}
 \usepackage[latin1]{inputenc}
+\usepackage{listings}
 
 \title{Open Source Android Development Tools}
 \author{Manfred Moser}
 \date{July, 2011}
-\institute{simpligility technologies inc.}
+\institute{simpligility.com}
 
 % \institute{simpligility technologies inc.\\[\medskipamount]
 %       \includegraphics[scale=0.6]{simpligility.png}%
@@ -74,7 +75,7 @@
         \item<3->various forks from upstream project
         \item<4->base for custom roms and such
         \item<5->various different open source licenses
-        \item<6->source released in drops, more or less late
+        \item<6->source released in drops, sometimes late or not yet
       \end{itemize}
     \end{frame}
 
@@ -107,7 +108,7 @@
         \item<1->[Motorola MOTODEV Studio \surl{http://developer.motorola.com/docstools/motodevstudio/}] \hfill \\  partly open source, commiting upstream to ADT and Eclipse Sequoyah \surl{http://eclipse.org/sequoyah/} 
         \item<2->[Jetbrains IntelliJ IDEA CE \surl{http://www.jetbrains.org/}] \hfill \\ fully open source, includes Android support 
         \item<3->[Oracle Netbeans \surl{http://kenai.com/projects/nbandroid/}] \hfill \\ fully open source, community maintained plugin for Android 
-        \item<4->[Emacs \surl{http://gitorious.org/emacs-android-minor-mode}] \hfill \\ fully open source, 
+        \item<4->[Emacs \surl{http://gitorious.org/emacs-android-minor-mode}] \hfill \\ fully open source, limited
       \end{description}
     \end{frame}
 
@@ -205,14 +206,36 @@
 
     \begin{frame}{Example RoboGuice}
       \begin{columns}[t]
-        \begin{column}{0.5\textwidth}
+        \begin{column}{0.2\textwidth}
           \begin{center}
-            \includegraphics[height=2.0in]{roboguice.png}
+            \includegraphics[height=1.0in]{roboguice.png}
           \end{center}
         \end{column}
 
-        \begin{column}{0.5\textwidth}
-          Sample Code Here
+       \begin{column}{0.8\textwidth}
+Compare yourself:
+
+\verb|class AndroidShowCase extends Activity
+%   private TextView name; 
+%   public void onCreate(Bundle savedInstanceState) { 
+%     super.onCreate(savedInstanceState); 
+%     setContentView(R.layout.androidshowcase); 
+%     name = findViewById(R.id.name);
+%|
+%\begin{verbatim*}
+% test
+%\end{verbatim*}
+
+%  
+% class AndroidShowCase extends Activity { 
+%   private TextView name; 
+%   public void onCreate(Bundle savedInstanceState) { 
+%     super.onCreate(savedInstanceState); 
+%     setContentView(R.layout.androidshowcase); 
+%     name = findViewById(R.id.name);
+
+
+
         \end{column}
       \end{columns}
     \end{frame}
@@ -238,11 +261,11 @@
       \end{description}
     \end{frame}
 
-    \begin{frame}{AndroidSherlock}
-      \begin{center}
-      \includegraphics[height=2.5in]{androidsherlock.png}
-      \end{center}
-    \end{frame}
+%     \begin{frame}{AndroidSherlock}
+%       \begin{center}
+%       \includegraphics[height=2.5in]{androidsherlock.png}
+%       \end{center}
+%     \end{frame}
 
 \subsection{Game Development Libraries}
 
