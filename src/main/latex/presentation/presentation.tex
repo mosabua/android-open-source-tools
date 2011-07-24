@@ -206,40 +206,22 @@
 
     \begin{frame}{Example RoboGuice}
       \begin{columns}[t]
-        \begin{column}{0.2\textwidth}
+        \begin{column}{0.3\textwidth}
           \begin{center}
-            \includegraphics[height=1.0in]{roboguice.png}
+            \includegraphics[height=2.0in]{roboguice.png}
           \end{center}
         \end{column}
 
-       \begin{column}{0.8\textwidth}
-Compare yourself:
-\begin{quotation}
- test
-\end{quotation}
-
-
-%\verb*|class AndroidShowCase extends Activity\{
-%\verb*|   private TextView name; 
-%   public void onCreate(Bundle savedInstanceState) { 
-%     super.onCreate(savedInstanceState); 
-%     setContentView(R.layout.androidshowcase); 
-%     name = findViewById(R.id.name);
-%|
-%\begin{verbatim*}
-%class AndroidShowCase extends Activity
-%\end{verbatim*}
-
-%  
-% class AndroidShowCase extends Activity { 
-%   private TextView name; 
-%   public void onCreate(Bundle savedInstanceState) { 
-%     super.onCreate(savedInstanceState); 
-%     setContentView(R.layout.androidshowcase); 
-%     name = findViewById(R.id.name);
-
-
-
+       \begin{column}{0.7\textwidth}
+        @Inject myObj; \\
+        @InjectResource(R.string.name) \\
+        @InjectView(R.id.editName) \\
+        @Singleton stateHolder; \\
+        and so on instead of \\
+        MyObject myObj = new MyObject(); \\
+        getResources().getString(R.string.name) \\ 
+        findViewById(R.id.editName) \\
+        and lots more \\
         \end{column}
       \end{columns}
     \end{frame}
@@ -327,6 +309,7 @@ Compare yourself:
       \item C/C++ (via NDK first class)
       \item JRuby
       \item Scala
+      \item Coljure
       \item JavaScript (e.g. via PhoneGap)
       \item Processing \surl{http://wiki.processing.org/w/Android}
       \item C\#
