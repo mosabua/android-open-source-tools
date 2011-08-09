@@ -7,6 +7,10 @@ Manfred Moser presented this at [OSCON Java 2011](http://www.oscon.com/oscon2011
 
 The final pdf files are available on the [simpligility website](http://www.simpligility.com/2011/07/android-open-source-development-tools-at-oscon-2011/)
 
+Licensed as [Creative Commomns Share Alike](http://creativecommons.org/licenses/by-sa/3.0/)
+
+To build the presentation you need working LaTeX/pdfTeX install including the Beamer class.
+
 
 
 
